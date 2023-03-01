@@ -5,6 +5,8 @@ public class MovementController : MonoBehaviour
 {
     [SerializeField] private InputAction movement;
     [SerializeField] private float controlSpeed = 10f;
+    [SerializeField] private float xRange = 5f;
+    [SerializeField] private float yRange = 5f;
 
     private Vector3 _newPosition;
 
@@ -23,10 +25,12 @@ public class MovementController : MonoBehaviour
         var horizontalThrow = movement.ReadValue<Vector2>().x;
         var verticalThrow = movement.ReadValue<Vector2>().y;
 
-        _newPosition.x = horizontalThrow * Time.deltaTime * controlSpeed;
-        _newPosition.y = verticalThrow * Time.deltaTime * controlSpeed;
+        var localPosition = transform.localPosition;
+        _newPosition.x = Mathf.Clamp(localPosition.x + horizontalThrow * Time.deltaTime * controlSpeed, -xRange, xRange);
+        _newPosition.y = Mathf.Clamp(localPosition.y + verticalThrow * Time.deltaTime * controlSpeed, -yRange, yRange);
         
 
-        transform.localPosition += _newPosition;
+        localPosition = _newPosition;
+        transform.localPosition = localPosition;
     }
 }
