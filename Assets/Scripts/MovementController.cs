@@ -4,6 +4,9 @@ using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private InputAction movement;
+    [SerializeField] private float controlSpeed = 10f;
+
+    private Vector3 _newPosition;
 
     private void OnEnable()
     {
@@ -19,7 +22,11 @@ public class MovementController : MonoBehaviour
     {
         var horizontalThrow = movement.ReadValue<Vector2>().x;
         var verticalThrow = movement.ReadValue<Vector2>().y;
+
+        _newPosition.x = horizontalThrow * Time.deltaTime * controlSpeed;
+        _newPosition.y = verticalThrow * Time.deltaTime * controlSpeed;
         
-        Debug.Log(horizontalThrow);
+
+        transform.localPosition += _newPosition;
     }
 }
