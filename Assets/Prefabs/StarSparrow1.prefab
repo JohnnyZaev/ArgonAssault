@@ -127,6 +127,12 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 0
     m_Flags: 0
+  controlSpeed: 10
+  xRange: 5
+  yRange: 5
+  positionPitchFactor: -2
+  controlPitchFactor: -10
+  positionYawFactor: 5
 --- !u!1001 &355280732562502821
 PrefabInstance:
   m_ObjectHideFlags: 0
