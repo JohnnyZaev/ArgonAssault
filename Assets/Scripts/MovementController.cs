@@ -22,13 +22,26 @@ public class MovementController : MonoBehaviour
 
     private void Update()
     {
+        PerformThrow();
+        PerfomRotation();
+    }
+
+    private void PerfomRotation()
+    {
+        float pitch, yaw, roll;
+        
+        transform.localRotation = Quaternion.Euler(30f, -30f, 0f);
+    }
+
+    private void PerformThrow()
+    {
         var horizontalThrow = movement.ReadValue<Vector2>().x;
         var verticalThrow = movement.ReadValue<Vector2>().y;
 
         var localPosition = transform.localPosition;
         _newPosition.x = Mathf.Clamp(localPosition.x + horizontalThrow * Time.deltaTime * controlSpeed, -xRange, xRange);
         _newPosition.y = Mathf.Clamp(localPosition.y + verticalThrow * Time.deltaTime * controlSpeed, -yRange, yRange);
-        
+
 
         localPosition = _newPosition;
         transform.localPosition = localPosition;
