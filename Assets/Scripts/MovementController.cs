@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MovementController : MonoBehaviour
 {
-    [SerializeField] private InputAction movement;
+    [SerializeField] private InputAction rocketMovement;
     [SerializeField] private float controlSpeed = 10f;
     [SerializeField] private float xRange = 5f;
     [SerializeField] private float yRange = 5f;
@@ -18,12 +18,12 @@ public class MovementController : MonoBehaviour
 
     private void OnEnable()
     {
-        movement.Enable();
+        rocketMovement.Enable();
     }
 
     private void OnDisable()
     {
-        movement.Disable();
+        rocketMovement.Disable();
     }
 
     private void Update()
@@ -44,8 +44,8 @@ public class MovementController : MonoBehaviour
 
     private void PerformThrow()
     {
-        _horizontalThrow = movement.ReadValue<Vector2>().x;
-        _verticalThrow = movement.ReadValue<Vector2>().y;
+        _horizontalThrow = rocketMovement.ReadValue<Vector2>().x;
+        _verticalThrow = rocketMovement.ReadValue<Vector2>().y;
 
         var localPosition = transform.localPosition;
         _newPosition.x = Mathf.Clamp(localPosition.x + _horizontalThrow * Time.deltaTime * controlSpeed, -xRange, xRange);
