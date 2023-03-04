@@ -14,7 +14,8 @@ public class MovementController : MonoBehaviour
 
     private Vector3 _newPosition;
 
-    private float _horizontalThrow, _verticalThrow;
+    private float _horizontalThrow;
+    private float _verticalThrow;
 
     private void OnEnable()
     {
