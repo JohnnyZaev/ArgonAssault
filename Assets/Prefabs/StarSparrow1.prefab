@@ -70,69 +70,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f530a5a077a164495672fced092d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement:
-    m_Name: Movement
+  rocketMovement:
+    m_Name: Rocket Movement
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 53da98f0-ac55-45d8-99d3-9b3af8005553
+    m_Id: e52fb3f6-83df-426a-b7f2-c7a5b0f81232
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: WASD
-      m_Id: 4e7d6c2e-a900-4638-ab00-d0605ef3e268
-      m_Path: 2DVector(mode=2)
+    - m_Name: Keyboard
+      m_Id: 745102ff-f1fb-4439-bc55-65351021a973
+      m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Movement
+      m_Action: Rocket Movement
       m_Flags: 4
     - m_Name: up
-      m_Id: 7b69e1ef-659a-4e19-9b56-f8d3c50831f8
+      m_Id: fd0c0ac2-0834-4add-a6c0-bb250297c9d3
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Movement
+      m_Action: Rocket Movement
       m_Flags: 8
     - m_Name: down
-      m_Id: eacb5463-66bb-491b-a51e-106e1e80117a
+      m_Id: 745bb8d1-ddf7-41c0-8895-67b05cc05e24
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Movement
+      m_Action: Rocket Movement
       m_Flags: 8
     - m_Name: left
-      m_Id: a1e33582-8a92-473b-b118-77120810b298
+      m_Id: d5556e6b-ea8e-452e-a816-d1aae742c8d0
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Movement
+      m_Action: Rocket Movement
       m_Flags: 8
     - m_Name: right
-      m_Id: 11863edd-52b6-4fe3-a475-f4e63021dead
+      m_Id: 6581b194-6d7d-462f-a1fd-64ba7e3d7b48
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Movement
+      m_Action: Rocket Movement
       m_Flags: 8
-    - m_Name: 
-      m_Id: 6345f6b8-be6f-4696-9908-e1ff9655c5e0
-      m_Path: <Gamepad>/leftStick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 0
     m_Flags: 0
   controlSpeed: 10
-  xRange: 5
-  yRange: 5
+  xRange: 8
+  yRange: 6
   positionPitchFactor: -2
   controlPitchFactor: -10
   positionYawFactor: 5
+  controlRollFactor: 5
 --- !u!1001 &355280732562502821
 PrefabInstance:
   m_ObjectHideFlags: 0
