@@ -5,6 +5,7 @@ public class MovementController : MonoBehaviour
 {
     [SerializeField] private InputAction rocketMovement;
     [SerializeField] private InputAction rocketFire;
+    [SerializeField] private GameObject[] lasers;
     [SerializeField] private float controlSpeed = 10f;
     [SerializeField] private float xRange = 5f;
     [SerializeField] private float yRange = 5f;
@@ -40,7 +41,19 @@ public class MovementController : MonoBehaviour
     private void ProcessFiring()
     {
         if (rocketFire.ReadValue<float>() > 0.5f)
-            Debug.Log("fire!");
+        {
+            foreach (var laser in lasers)
+            {
+                laser.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (var laser in lasers)
+            {
+                laser.SetActive(false);
+            }
+        }
     }
 
     private void PerformRotation()
