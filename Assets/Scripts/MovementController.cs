@@ -44,14 +44,16 @@ public class MovementController : MonoBehaviour
         {
             foreach (var laser in lasers)
             {
-                laser.SetActive(true);
+                var emission = laser.GetComponent<ParticleSystem>().emission;
+                emission.enabled = true;
             }
         }
         else
         {
             foreach (var laser in lasers)
             {
-                laser.SetActive(false);
+                var emission = laser.GetComponent<ParticleSystem>().emission;
+                emission.enabled = false;
             }
         }
     }
