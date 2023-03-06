@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3984289660598880510}
-  m_LocalRotation: {x: 0.0009841904, y: -0.56663, z: -0.0006531846, w: -0.8239715}
+  m_LocalRotation: {x: -0.0009805172, y: 0.5666289, z: 0.0006531467, w: 0.82397234}
   m_LocalPosition: {x: 270.85773, y: 33.233444, z: 371.98743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 3989009906869412143}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.135, y: 69.031, z: -0.002}
 --- !u!95 &3984289660598880508
 Animator:
   serializedVersion: 5
@@ -271,6 +271,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3984289660598880509}
     m_Modifications:
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_Id
+      value: 58db89b4-cbe3-46b9-a4cd-d289f60387e5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_Name
+      value: Rocket Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 0b67e25a-a63d-46d1-9698-fe6202ec8a55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Mouse>/leftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257431550034427610, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: rocketFire.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Rocket Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551578236637692371, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551578236637692371, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551578236637692371, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.07006688
+      objectReference: {fileID: 0}
     - target: {fileID: 7137699220720093544, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
       propertyPath: m_RootOrder
       value: 1

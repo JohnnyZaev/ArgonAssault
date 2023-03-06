@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private InputAction rocketMovement;
+    [SerializeField] private InputAction rocketFire;
     [SerializeField] private float controlSpeed = 10f;
     [SerializeField] private float xRange = 5f;
     [SerializeField] private float yRange = 5f;
@@ -20,17 +21,26 @@ public class MovementController : MonoBehaviour
     private void OnEnable()
     {
         rocketMovement.Enable();
+        rocketFire.Enable();
     }
 
     private void OnDisable()
     {
         rocketMovement.Disable();
+        rocketFire.Disable();
     }
 
     private void Update()
     {
         PerformThrow();
         PerformRotation();
+        ProcessFiring();
+    }
+
+    private void ProcessFiring()
+    {
+        if (rocketFire.ReadValue<float>() > 0.5f)
+            Debug.Log("fire!");
     }
 
     private void PerformRotation()

@@ -681,49 +681,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRig
       objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.07006688
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverTrail.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverTrail.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverTrail.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverLifetime.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverLifetime.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7746060197602126228, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
-      propertyPath: TrailModule.colorOverLifetime.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34be68a88923077409ae2253268d3fa5, type: 3}
