@@ -309,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4551578236637692369, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4551578236637692371, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9171180501497459795, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}

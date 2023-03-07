@@ -44,18 +44,22 @@ public class MovementController : MonoBehaviour
         {
             foreach (var laser in lasers)
             {
-                var emission = laser.GetComponent<ParticleSystem>().emission;
-                emission.enabled = true;
+                EmissionSwitcher(laser, true);
             }
         }
         else
         {
             foreach (var laser in lasers)
             {
-                var emission = laser.GetComponent<ParticleSystem>().emission;
-                emission.enabled = false;
+                EmissionSwitcher(laser, false);
             }
         }
+    }
+
+    private void EmissionSwitcher(GameObject laser, bool state)
+    {
+        var emission = laser.GetComponent<ParticleSystem>().emission;
+        emission.enabled = state;
     }
 
     private void PerformRotation()
@@ -64,7 +68,6 @@ public class MovementController : MonoBehaviour
         var pitch = localPosition.y * positionPitchFactor + _verticalThrow * controlPitchFactor;
         var yaw = localPosition.x * positionYawFactor;
         var roll = _horizontalThrow * -controlRollFactor;
-        
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
