@@ -121,6 +121,16 @@ MonoBehaviour:
       m_Action: Rocket Movement
       m_Flags: 8
     m_Flags: 0
+  rocketFire:
+    m_Name: Rocket Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: dba35cea-feb8-4640-bf6b-0bd610c06f18
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  lasers: []
   controlSpeed: 10
   xRange: 8
   yRange: 6
