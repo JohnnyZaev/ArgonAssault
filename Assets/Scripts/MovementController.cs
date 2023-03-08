@@ -5,7 +5,10 @@ public class MovementController : MonoBehaviour
 {
     [SerializeField] private InputAction rocketMovement;
     [SerializeField] private InputAction rocketFire;
+    
+    [Header("General Setup Settings")]
     [SerializeField] private GameObject[] lasers;
+    [Tooltip("How fast ship moving up and down based upon player speed")]
     [SerializeField] private float controlSpeed = 10f;
     [SerializeField] private float xRange = 5f;
     [SerializeField] private float yRange = 5f;
