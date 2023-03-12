@@ -377,6 +377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+--- !u!198 &377752680463255439 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5867047854624436168, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
+  m_PrefabInstance: {fileID: 6077041448328210503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3103939934605745172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9171180501497459795, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
@@ -429,6 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadDelay: 2
+  crushVFX: {fileID: 377752680463255439}
 --- !u!4 &3989009906869412143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7137699220720093544, guid: f1bb85edfd69d6c46983007274312dd9, type: 3}
