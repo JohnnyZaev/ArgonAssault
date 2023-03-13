@@ -503,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ee9b74af5f82b4cbf100697751a064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crushVFX: {fileID: 1584917818056676258, guid: ede6702e7d157314ebb2c8eabe92396f, type: 3}
 --- !u!1 &1244313474
 GameObject:
   m_ObjectHideFlags: 0
