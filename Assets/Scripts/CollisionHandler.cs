@@ -14,7 +14,6 @@ public class CollisionHandler : MonoBehaviour
     private void StartCrushSequence()
     {
         GetComponent<MovementController>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         crushVFX.Play();
         Invoke(nameof(ReloadLevel), loadDelay);
